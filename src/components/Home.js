@@ -7,7 +7,7 @@ const Home = () => (
     <img alt="Home" src="/home.jpg" className="home-photo" />
     <div>
       <h1>Focus on what you do best.</h1>
-      <h2>Let me handle the website.</h2>
+      <h3>Let me handle the website.</h3>
       <FontAwesomeIcon icon={faAngleDoubleDown} className="down-arrow" />
     </div>
   </div>
