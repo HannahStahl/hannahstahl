@@ -25,7 +25,9 @@ const Routes = () => (
 const App = withRouter(() => (
   <>
     <NavBar />
-    <Routes />
+    <div className="page-content">
+      <Routes />
+    </div>
   </>
 ));
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
