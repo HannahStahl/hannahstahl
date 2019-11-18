@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  --gray: rgb(75, 75, 75);
+  --dark-gray: rgb(50, 50, 50);
+  color: var(--dark-gray);
 }
 
 code {
@@ -13,7 +16,101 @@ code {
     monospace;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark-gray);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-link.active {
+  font-weight: 500;
+}
+
 .page-content {
-  padding: 5%;
-  padding-top: 7%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-photo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  animation: fade 1s;
+  opacity: 0.8;
+}
+
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0.8; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home div {
+  margin: 10px;
+  width: 600px;
+  height: 400px;
+  animation: fadein 1s;
+  outline: 2px solid white;
+  outline-offset: -15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home h1 {
+  margin-bottom: 2%;
+}
+
+.home h2 {
+  margin-bottom: 3%;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(2px) }
+  50% { transform: translateY(-1.5px) }
+  100% { transform: translateY(2px) }
+}
+
+.down-arrow {
+  color: var(--gray);
+  animation: bounce 2s cubic-bezier(0.34, 0.61, 0.59, 1.11) infinite
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+  color: var(--dark-gray);
+}
+
+@media all and (max-width: 600px) {
+  .home div {
+    height: 300px;
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
 }

@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => (
-  <Navbar collapseOnSelect expand="lg">
+  <Navbar collapseOnSelect expand="lg" fixed="top">
     <Navbar.Brand href="/">
       <img
         alt="Home"

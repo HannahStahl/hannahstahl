@@ -1,11 +1,15 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => (
-  <div>
-    <h1>Awesome Website Title</h1>
-    <p>Time to create an awesome website.</p>
-    <Button>{'Let\'s go'}</Button>
+  <div className="home">
+    <img alt="Home" src="/home.jpg" className="home-photo" />
+    <div>
+      <h1>Focus on what you do best.</h1>
+      <h2>Let me handle the website.</h2>
+      <FontAwesomeIcon icon={faAngleDoubleDown} className="down-arrow" />
+    </div>
   </div>
 );
 
