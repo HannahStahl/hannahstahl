@@ -4,7 +4,15 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => (
   <Navbar collapseOnSelect expand="lg">
-    <Navbar.Brand href="/">Home</Navbar.Brand>
+    <Navbar.Brand href="/">
+      <img
+        alt="Home"
+        src="favicon.ico"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto" activeKey={window.location.pathname}>
