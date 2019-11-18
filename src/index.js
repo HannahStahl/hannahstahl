@@ -27,8 +27,10 @@ const Routes = () => (
 const App = withRouter(() => (
   <>
     <NavBar />
-    <div className="page-content">
-      <Routes />
+    <div className="page-content-container">
+      <div className="page-content">
+        <Routes />
+      </div>
     </div>
   </>
 ));
