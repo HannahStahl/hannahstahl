@@ -11,6 +11,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
+import NavBar from './components/NavBar';
 
 const Routes = () => (
   <Switch>
@@ -21,7 +22,12 @@ const Routes = () => (
     <Route component={NotFound} />
   </Switch>
 );
-const App = withRouter(() => <Routes />);
+const App = withRouter(() => (
+  <>
+    <NavBar />
+    <Routes />
+  </>
+));
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
