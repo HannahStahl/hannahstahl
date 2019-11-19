@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => (
-  <div className="home">
+  <div>
     <img alt="Home" src="/home.jpg" className="home-photo" />
-    <div>
+    <div className="home-content">
       <h1>Focus on what you do best.</h1>
       <h3>Let me handle the website.</h3>
       <FontAwesomeIcon icon={faAngleDoubleDown} className="down-arrow" />
