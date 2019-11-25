@@ -132,8 +132,8 @@ code {
 
 .about-section-text {
   width: 650px;
-  max-width: 50%;
-  padding: 30px;
+  max-width: 55vw;
+  padding: 35px;
   background-color: rgba(225, 225, 220, 0.6);
   z-index: 100;
 }
@@ -160,8 +160,8 @@ code {
 }
 
 .about-photo {
-  height: 40vh;
-  width: auto;
+  width: 40vw;
+  height: auto;
 }
 
 .mobile-about-photo {
