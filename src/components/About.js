@@ -2,7 +2,7 @@ import React from 'react';
 
 const content = require('../content/about.json');
 
-const About = () => (window.innerWidth > 1270 ? (
+const About = () => (window.innerWidth > 992 ? (
   <div className="about">
     {content.map((section, index) => (
       <div key={section.header} className="about-section">
