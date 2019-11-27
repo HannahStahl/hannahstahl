@@ -26,7 +26,7 @@ const Routes = () => (
 );
 const App = withRouter(() => (
   <>
-    <NavBar />
+    <NavBar onHomePage={window.location.pathname === '/'} />
     <div className="page-content-container">
       <div className="page-content">
         <Routes />
