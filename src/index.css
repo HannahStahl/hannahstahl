@@ -3,7 +3,8 @@ body {
   font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --light-gray: rgb(240, 240, 240);
+  --extra-light-gray: rgb(240, 240, 240);
+  --light-gray: rgb(200, 200, 200);
   --gray: rgb(75, 75, 75);
   --dark-gray: rgb(50, 50, 50);
   color: var(--dark-gray);
@@ -278,7 +279,7 @@ code {
   margin: 30px;
   border: solid 1px var(--gray);
   border-radius: 10px;
-  background-color: var(--light-gray);
+  background-color: var(--extra-light-gray);
 }
 
 .plan-icon svg {
@@ -321,6 +322,40 @@ code {
 .maintenance h3 {
   text-align: left;
   margin-bottom: 15px;
+}
+
+.contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.send-email-text {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.line-header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--gray);
+}
+
+.line-header:before, .line-header:after {
+  content: '';
+  border-top: 1px solid var(--light-gray);
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.line-header:after {
+  margin: 0 0 0 20px;
 }
 
 @media all and (max-width: 992px) {
