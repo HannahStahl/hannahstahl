@@ -29,6 +29,12 @@ const Pricing = () => (
         </div>
       ))}
     </div>
+    <div className="maintenance-container">
+      <div className="maintenance">
+        <h4>All plans come with a $10/month maintenance fee, which covers:</h4>
+        <ul>{content.maintenance.map((feature) => <li key={feature}><p>{feature}</p></li>)}</ul>
+      </div>
+    </div>
   </div>
 );
 
