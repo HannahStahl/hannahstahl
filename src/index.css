@@ -303,7 +303,7 @@ code {
 .plan {
   padding: 30px;
   margin: 30px;
-  border: solid 1px var(--gray);
+  border: solid 1px var(--light-gray);
   border-radius: 10px;
   box-shadow: -5px 5px 5px 0px var(--light-gray);
 }
