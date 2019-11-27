@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserTie, faShoppingCart, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, faShoppingCart, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const content = require('../content/pricing.json');
 
 const icons = {
-  faUserTie: <FontAwesomeIcon icon={faUserTie} />,
+  faUserCircle: <FontAwesomeIcon icon={faUserCircle} />,
   faShoppingCart: <FontAwesomeIcon icon={faShoppingCart} />,
   faPlus: <FontAwesomeIcon icon={faPlus} />,
 };

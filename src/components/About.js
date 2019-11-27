@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../config';
 
 const content = require('../content/about.json');
 
@@ -8,7 +9,7 @@ const About = () => (window.innerWidth > 992 ? (
       <div key={section.header} className="about-section">
         {index % 2 === 0 && (
           <div>
-            <img src={section.photo} alt={section.header} className="about-photo" />
+            <img src={`${config.cloudFrontURL}/${section.photo}`} alt="About" className="about-photo" />
           </div>
         )}
         <div className={`about-section-text ${index % 2 === 0 && 'about-section-2'}`}>
@@ -17,7 +18,7 @@ const About = () => (window.innerWidth > 992 ? (
         </div>
         {index % 2 === 1 && (
           <div className="about-section-2">
-            <img src={section.photo} alt={section.header} className="about-photo" />
+            <img src={`${config.cloudFrontURL}/${section.photo}`} alt="About" className="about-photo" />
           </div>
         )}
       </div>
@@ -32,7 +33,7 @@ const About = () => (window.innerWidth > 992 ? (
           <p>{section.paragraph}</p>
         </div>
         <div>
-          <img src={section.photo} alt={section.header} className="mobile-about-photo" />
+          <img src={`${config.cloudFrontURL}/${section.photo}`} alt="About" className="mobile-about-photo" />
         </div>
       </div>
     ))}

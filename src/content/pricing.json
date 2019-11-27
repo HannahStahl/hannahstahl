@@ -1,8 +1,8 @@
 {
   "plans": [
     {
-      "icon": "faUserTie",
-      "name": "Informational",
+      "icon": "faUserCircle",
+      "name": "Basic",
       "price": "$1,000",
       "description": "Beautifully display information about you or your business.",
       "features": [
@@ -18,7 +18,7 @@
       "price": "$1,500",
       "description": "Create an awesome online shopping experience.",
       "features": [
-        "All features that are included with Informational Website",
+        "All features that are included with Informational plan",
         "Ability to manage products and payments through secure BigCommerce platform"
       ]
     },

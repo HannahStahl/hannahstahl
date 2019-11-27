@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import config from '../config';
 
 export default class Contact extends Component {
   constructor(props) {
@@ -12,10 +13,7 @@ export default class Contact extends Component {
     event.preventDefault();
     const { name, email, message } = this.state;
     this.setState({ sending: true });
-    const url = process.env.REACT_APP_STAGE === 'prod'
-      ? 'https://3x7y40mgsh.execute-api.us-east-1.amazonaws.com/prod'
-      : 'https://m9nbwrw0ye.execute-api.us-east-1.amazonaws.com/dev';
-    fetch(`${url}/email/send`, {
+    fetch(`${config.emailServiceURL}/email/send`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, message }),
@@ -46,9 +44,11 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contact">
-        <a href="https://calendly.com/hannahstahl/consultation" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline-primary" size="lg">Schedule a free consultation</Button>
-        </a>
+        <div className="consultation-button">
+          <a href="https://calendly.com/hannahstahl/consultation" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline-primary" size="lg">Schedule a free consultation</Button>
+          </a>
+        </div>
         <div className="line-header">OR</div>
         <h4 className="send-email-text">Send me an email.</h4>
         <p>I will get back to you within 1 business day.</p>
