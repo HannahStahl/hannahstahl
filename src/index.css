@@ -3,6 +3,9 @@ body {
   font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --extra-light-purple: rgb(237, 214, 240);
+  --extra-light-blue: rgb(211, 221, 240);
+  --extra-light-green: rgb(213, 241, 224);
   --extra-light-gray: rgb(240, 240, 240);
   --light-gray: rgb(200, 200, 200);
   --gray: rgb(75, 75, 75);
@@ -183,6 +186,7 @@ code {
   width: 40vw;
   height: auto;
   border-radius: 10px;
+  border: solid 1px var(--dark-gray);
   box-shadow: -8px 8px 8px 0px var(--light-gray);
 }
 
@@ -301,7 +305,7 @@ code {
   margin: 30px;
   border: solid 1px var(--gray);
   border-radius: 10px;
-  background-color: var(--extra-light-gray);
+  box-shadow: -5px 5px 5px 0px var(--light-gray);
 }
 
 .plan-icon svg {

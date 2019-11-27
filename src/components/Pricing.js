@@ -16,7 +16,7 @@ const Pricing = () => (
     <div className="plans">
       {content.plans.map((plan) => (
         <div className="plan-container" key={plan.name}>
-          <div className="plan">
+          <div className="plan" style={{ backgroundColor: `var(--extra-light-${plan.color}` }}>
             <div className="plan-icon">{icons[plan.icon]}</div>
             <h2>{plan.name}</h2>
             <h3>{plan.price}</h3>

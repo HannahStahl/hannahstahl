@@ -10,7 +10,8 @@
         "Responsive styling that looks great on phones, tablets, and computers",
         "Contact form for visitors of your site to get in touch with you",
         "Content management tool for you to edit blog posts, portfolio items, etc."
-      ]
+      ],
+      "color": "purple"
     },
     {
       "icon": "faShoppingCart",
@@ -20,14 +21,16 @@
       "features": [
         "All features that are included with Informational plan",
         "Ability to manage products and payments through secure BigCommerce platform"
-      ]
+      ],
+      "color": "blue"
     },
     {
       "icon": "faPlus",
       "name": "Additional Features",
       "price": "Let's chat!",
       "description": "Add something special to your site.",
-      "details": "There's nothing a custom web developer can't build. Tell me what you need and we'll make it happen!"
+      "details": "There's nothing a custom web developer can't build. Tell me what you need and we'll make it happen!",
+      "color": "green"
     }
   ],
   "maintenance": [
