@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const content = require('../content/portfolio.json');
 
@@ -8,8 +10,13 @@ const Portfolio = () => (
       {content.portfolio.map((item) => (
         <div className="portfolio-item" key={item.name}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
-            <img src={`${item.img}-desktop.png`} alt={item.name} className="portfolio-desktop-img" />
-            <img src={`${item.img}-mobile.png`} alt={item.name} className="portfolio-mobile-img" />
+            <div className="screenshots">
+              <img src={`${item.img}-desktop.png`} alt={item.name} className="portfolio-desktop-img" />
+              <img src={`${item.img}-mobile.png`} alt={item.name} className="portfolio-mobile-img" />
+            </div>
+            <div className="external-link-icon-container">
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="external-link-icon" />
+            </div>
           </a>
         </div>
       ))}

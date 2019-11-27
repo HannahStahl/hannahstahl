@@ -189,12 +189,34 @@ code {
 
 .portfolio-item:hover {
   cursor: pointer;
+}
+
+.portfolio-item:hover .screenshots {
   opacity: 0.5;
+}
+
+.portfolio-item:hover .external-link-icon {
+  display: block;
 }
 
 .portfolio-item a {
   height: 100%;
   width: 100%;
+}
+
+.external-link-icon-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.external-link-icon {
+  font-size: 30px;
+  color: rgb(20, 20, 20);
+  display: none;
 }
 
 .portfolio-desktop-img {
