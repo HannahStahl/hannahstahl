@@ -3,6 +3,7 @@ body {
   font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --light-gray: rgb(240, 240, 240);
   --gray: rgb(75, 75, 75);
   --dark-gray: rgb(50, 50, 50);
   color: var(--dark-gray);
@@ -233,6 +234,65 @@ code {
   right: -50px;
 }
 
+.pricing {
+  width: 100%;
+  margin: 100px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing p {
+  margin-bottom: 0px;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan-container {
+  width: 450px;
+  max-width: 85%;
+  height: auto;
+}
+
+.plan {
+  padding: 30px;
+  margin: 30px;
+  border: solid 1px var(--gray);
+  border-radius: 10px;
+  background-color: var(--light-gray);
+}
+
+.plan-icon svg {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.plan .plan-icon, h2, h3, h4 {
+  text-align: center;
+}
+
+.plan-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.plan-feature {
+  margin-bottom: 5px;
+}
+
+.plan-details {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 @media all and (max-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     padding-right: 0px;
@@ -259,5 +319,44 @@ code {
 
   .mobile-about p {
     font-size: 15px;
+  }
+
+  .pricing {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .pricing h1 {
+    font-size: 24px;
+  }
+
+  .pricing h2 {
+    font-size: 20px;
+  }
+
+  .pricing h3 {
+    font-size: 20px;
+  }
+
+  .pricing h4 {
+    font-size: 16px;
+  }
+
+  .pricing p {
+    font-size: 13px;
+  }
+
+  .plan {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .plan-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .plan-feature {
+    margin-bottom: 2px;
   }
 }

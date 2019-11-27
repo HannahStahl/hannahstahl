@@ -1,0 +1,38 @@
+{
+  "plans": [
+    {
+      "icon": "faUserTie",
+      "name": "Informational",
+      "price": "$1,000",
+      "description": "Beautifully display information about you or your business.",
+      "features": [
+        "Design and development of single-page or multi-page site, displaying content provided by you",
+        "Responsive styling that looks great on phones, tablets, and computers",
+        "Contact form for visitors of your site to get in touch with you",
+        "Content management tool for you to edit blog posts, portfolio items, etc."
+      ]
+    },
+    {
+      "icon": "faShoppingCart",
+      "name": "E-Commerce",
+      "price": "$1,500",
+      "description": "Create an awesome online shopping experience.",
+      "features": [
+        "All features that are included with Informational Website",
+        "Ability to manage products and payments through secure BigCommerce platform"
+      ]
+    },
+    {
+      "icon": "faPlus",
+      "name": "Additional Features",
+      "price": "Let's chat!",
+      "description": "Add something special to your site.",
+      "details": "There's nothing a custom web developer can't build. Tell me what you need and we'll make it happen!"
+    }
+  ],
+  "maintenance": [
+    "Website hosting",
+    "Handling of any technical issues that arise",
+    "Anytime communication with me to discuss changes or additions to the site"
+  ]
+}
