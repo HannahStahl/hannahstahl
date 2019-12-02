@@ -17,9 +17,9 @@
       "icon": "faShoppingCart",
       "name": "E-Commerce",
       "price": "$1,500",
-      "description": "Create an awesome online shopping experience.",
+      "description": "Create a state-of-the-art online shopping experience.",
       "features": [
-        "All features that are included with Informational plan",
+        "All features that are included with Basic plan",
         "Ability to manage products and payments through secure BigCommerce platform"
       ],
       "color": "blue"

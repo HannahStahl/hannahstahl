@@ -15,7 +15,7 @@ const Pricing = () => (
     <h1 className="pricing-header">{'Let\'s create your dream website.'}</h1>
     <div className="maintenance-container">
       <div className="maintenance">
-        <h4>All plans come with a $10/month maintenance fee, which covers:</h4>
+        <h3>All plans come with a $10/month maintenance fee, which covers:</h3>
         <ul>{content.maintenance.map((feature) => <li key={feature}><p>{feature}</p></li>)}</ul>
       </div>
     </div>
@@ -24,7 +24,7 @@ const Pricing = () => (
         <div className="plan-container" key={plan.name}>
           <div className="plan" style={{ backgroundColor: `var(--extra-light-${plan.color}` }}>
             <div className="plan-icon">{icons[plan.icon]}</div>
-            <h2>{plan.name}</h2>
+            <h2 className="plan-name">{plan.name}</h2>
             <h3>{plan.price}</h3>
             <h4 className="plan-description">{plan.description}</h4>
             {plan.features && (
