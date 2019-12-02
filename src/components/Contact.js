@@ -25,6 +25,7 @@ export default class Contact extends Component {
           name: '', email: '', message: '', sending: false, sent: true,
         });
       } else {
+        // eslint-disable-next-line no-alert
         window.alert('There was an error sending your message. Please email me directly at hannahstahl14@gmail.com. Thank you!');
       }
     });
