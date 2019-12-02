@@ -44,28 +44,31 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contact">
-        <div className="consultation-button">
-          <a href="https://calendly.com/hannahstahl/consultation" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline-primary" size="lg">Schedule a free consultation</Button>
-          </a>
+        <img alt="Contact" src="contact.jpg" className="contact-photo" />
+        <div className="contact-form">
+          <div className="consultation-button">
+            <a href="https://calendly.com/hannahstahl/consultation" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline-primary" size="lg">Schedule a free consultation</Button>
+            </a>
+          </div>
+          <div className="line-header">OR</div>
+          <h4 className="send-email-text">Send me an email.</h4>
+          <p className="send-email-text-2">I will get back to you within 1 business day.</p>
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Group controlId="name">
+              <Form.Control type="text" placeholder="Your name" value={name} onChange={this.handleChange} />
+            </Form.Group>
+            <Form.Group controlId="email">
+              <Form.Control type="email" placeholder="Your email address" value={email} onChange={this.handleChange} />
+            </Form.Group>
+            <Form.Group controlId="message">
+              <Form.Control as="textarea" rows="5" placeholder="Your message" value={message} onChange={this.handleChange} />
+            </Form.Group>
+            <Button variant="primary" type="submit" block disabled={this.disabled()}>
+              {this.buttonText()}
+            </Button>
+          </Form>
         </div>
-        <div className="line-header">OR</div>
-        <h4 className="send-email-text">Send me an email.</h4>
-        <p>I will get back to you within 1 business day.</p>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Group controlId="name">
-            <Form.Control type="text" placeholder="Your name" value={name} onChange={this.handleChange} />
-          </Form.Group>
-          <Form.Group controlId="email">
-            <Form.Control type="email" placeholder="Your email address" value={email} onChange={this.handleChange} />
-          </Form.Group>
-          <Form.Group controlId="message">
-            <Form.Control as="textarea" rows="5" placeholder="Your message" value={message} onChange={this.handleChange} />
-          </Form.Group>
-          <Button variant="primary" type="submit" block disabled={this.disabled()}>
-            {this.buttonText()}
-          </Button>
-        </Form>
       </div>
     );
   }
