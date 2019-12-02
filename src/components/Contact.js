@@ -6,7 +6,9 @@ import config from '../config';
 export default class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: '', email: '', message: '', sending: false, sent: false };
+    this.state = {
+      name: '', email: '', message: '', sending: false, sent: false,
+    };
   }
 
   handleSubmit = (event) => {
@@ -17,19 +19,23 @@ export default class Contact extends Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, message }),
-    }).then(response => response.json()).then((json) => {
+    }).then((response) => response.json()).then((json) => {
       if (json.MessageId) {
-        this.setState({ name: '', email: '', message: '', sending: false, sent: true });
+        this.setState({
+          name: '', email: '', message: '', sending: false, sent: true,
+        });
       } else {
         window.alert('There was an error sending your message. Please email me directly at hannahstahl14@gmail.com. Thank you!');
       }
     });
   }
 
-  handleChange = event => this.setState({ [event.target.id]: event.target.value, sent: false });
+  handleChange = (event) => this.setState({ [event.target.id]: event.target.value, sent: false });
 
   disabled = () => {
-    const { name, email, message, sending, sent } = this.state;
+    const {
+      name, email, message, sending, sent,
+    } = this.state;
     return sent || sending || name.length === 0 || email.length === 0 || message.length === 0;
   }
 
