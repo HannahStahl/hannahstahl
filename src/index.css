@@ -336,18 +336,17 @@ code {
 .maintenance-container {
   display: flex;
   justify-content: center;
-}
-
-.maintenance {
-  margin-top: 30px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
 }
 
-.maintenance h3 {
-  text-align: left;
+.maintenance h4 {
   margin-bottom: 15px;
+}
+
+.maintenance ul {
+  max-width: 600px;
 }
 
 .contact {

@@ -13,6 +13,12 @@ const icons = {
 const Pricing = () => (
   <div className="pricing">
     <h1 className="pricing-header">{'Let\'s create your dream website.'}</h1>
+    <div className="maintenance-container">
+      <div className="maintenance">
+        <h4>All plans come with a $10/month maintenance fee, which covers:</h4>
+        <ul>{content.maintenance.map((feature) => <li key={feature}><p>{feature}</p></li>)}</ul>
+      </div>
+    </div>
     <div className="plans">
       {content.plans.map((plan) => (
         <div className="plan-container" key={plan.name}>
@@ -28,12 +34,6 @@ const Pricing = () => (
           </div>
         </div>
       ))}
-    </div>
-    <div className="maintenance-container">
-      <div className="maintenance">
-        <h3>All plans come with a $10/month maintenance fee, which covers:</h3>
-        <ul>{content.maintenance.map((feature) => <li key={feature}><p>{feature}</p></li>)}</ul>
-      </div>
     </div>
   </div>
 );
