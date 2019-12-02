@@ -9,6 +9,7 @@ body {
   --extra-light-green: rgb(222, 238, 228);
   --extra-light-gray: rgb(240, 240, 240);
   --light-gray: rgb(200, 200, 200);
+  --medium-gray: rgb(120, 120, 120);
   --gray: rgb(75, 75, 75);
   --dark-gray: rgb(50, 50, 50);
   color: var(--dark-gray);
@@ -51,7 +52,8 @@ code {
 }
 
 .navbar-light .navbar-toggler {
-  border-color: var(--gray);
+  border: none;
+  padding-right: 0px;
 }
 
 .navbar-light .navbar-toggler:focus {
@@ -125,7 +127,7 @@ code {
 }
 
 .down-arrow {
-  color: var(--gray);
+  color: var(--medium-gray);
   animation: bounce 2s cubic-bezier(0.34, 0.61, 0.59, 1.11) infinite
 }
 
