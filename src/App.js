@@ -1,11 +1,13 @@
 import React from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import { Waypoint } from 'react-waypoint';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
+
+configureAnchors({ offset: -62 });
 
 const App = () => (
   <>

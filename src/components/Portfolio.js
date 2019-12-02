@@ -6,8 +6,9 @@ import config from '../config';
 const content = require('../content/portfolio.json');
 
 const Portfolio = () => (
-  <div>
-    <div className="portfolio">
+  <div className="portfolio">
+    <h1>Check out some of my latest work.</h1>
+    <div className="portfolio-items">
       {content.portfolio.map((item) => (
         <div className="portfolio-item" key={item.name}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
