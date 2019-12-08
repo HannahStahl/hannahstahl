@@ -421,11 +421,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: url('http://d3me27l3ng8az4.cloudfront.net/contact.jpg');
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center !important;
 }
 
 .contact-form {
@@ -477,6 +472,16 @@ footer {
 @media all and (max-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     padding-right: 0px;
+  }
+}
+
+@media all and (min-width: 601px) {
+  .contact {
+    background: url('http://d3me27l3ng8az4.cloudfront.net/contact.jpg');
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
 }
 
