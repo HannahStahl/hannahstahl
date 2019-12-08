@@ -116,7 +116,11 @@ footer {
   align-items: center;
 }
 
-.home-content {
+.home-content.hidden {
+  display: none;
+}
+
+.home-content.visible {
   text-align: center;
   margin: 10px;
   width: 600px;
