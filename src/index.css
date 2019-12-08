@@ -35,22 +35,12 @@ code {
   border-bottom: solid 1px var(--light-gray);
 }
 
-.navbar.transparent {
-  background-color: transparent;
-  border-bottom: none;
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: var(--dark-gray);
   padding-left: 15px;
   padding-right: 15px;
   font-size: 18px;
   text-align: right;
-}
-
-.navbar-light.transparent .navbar-nav .nav-link {
-  color: white;
-  text-shadow: -2px 2px 2px var(--gray);
 }
 
 .nav-link.active {
