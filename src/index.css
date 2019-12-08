@@ -181,10 +181,9 @@ footer {
   max-width: 55vw;
   padding: 35px;
   background-color: var(--extra-light-gray);
+  border: solid 1px var(--light-gray);
   opacity: 0.9;
   z-index: 100;
-  border-radius: 10px;
-  box-shadow: -5px 5px 5px 0px rgba(200, 200, 200, 0.5);
 }
 
 .about-section-text h1 {
@@ -211,9 +210,11 @@ footer {
 .about-photo {
   width: 40vw;
   height: auto;
-  border-radius: 10px;
   border: solid 1px var(--dark-gray);
-  box-shadow: -8px 8px 8px 0px var(--light-gray);
+}
+
+.about-photo.cms {
+  border: none;
 }
 
 .mobile-about-photo {

@@ -9,7 +9,7 @@ const About = () => (window.innerWidth > 992 ? (
       <div key={section.header} className="about-section">
         {index % 2 === 0 && (
           <div>
-            <img src={`${config.cloudFrontURL}/${section.photo}`} alt="About" className="about-photo" />
+            <img src={`${config.cloudFrontURL}/${section.photo}`} alt="About" className={`about-photo ${index === 2 ? 'cms' : ''}`} />
           </div>
         )}
         <div className={`about-section-text ${index % 2 === 0 && 'about-section-2'}`}>
