@@ -51,7 +51,6 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contact">
-        <img alt="Contact" src={`${config.cloudFrontURL}/contact.jpg`} className="contact-photo" />
         <div className="contact-form">
           <div className="consultation-button">
             <a href="https://calendly.com/hannahstahl/consultation" target="_blank" rel="noopener noreferrer">
