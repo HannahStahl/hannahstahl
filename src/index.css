@@ -59,10 +59,16 @@ footer {
   padding-right: 15px;
   font-size: 18px;
   text-align: right;
+  transition: all .2s;
 }
 
 .nav-link.active {
   font-weight: 400;
+}
+
+.nav-link:hover {
+  color: black !important;
+  transform: translate(0%, -5%);
 }
 
 .navbar-light .navbar-toggler {
