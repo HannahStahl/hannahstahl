@@ -6,6 +6,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 configureAnchors({ offset: -62 });
 
@@ -26,6 +27,7 @@ const App = () => (
     <ScrollableAnchor id="contact">
       <Waypoint topOffset="50%"><div className="section"><Contact /></div></Waypoint>
     </ScrollableAnchor>
+    <Footer />
   </>
 );
 
