@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import config from '../config';
@@ -8,6 +9,7 @@ const content = require('../content/portfolio.json');
 const Portfolio = () => (
   <div className="portfolio">
     <h1>Check out some of my latest work.</h1>
+    <Fade left><div className="header-line" /></Fade>
     <div className="portfolio-items">
       {content.portfolio.map((item) => (
         <div className="portfolio-item" key={item.name}>

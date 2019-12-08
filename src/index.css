@@ -237,7 +237,7 @@ footer {
 .portfolio h1 {
   color: white;
   margin-bottom: 20px;
-  font-size: 1.7rem;
+  font-weight: 400;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -276,6 +276,14 @@ footer {
 .portfolio-item a {
   height: 100%;
   width: 100%;
+}
+
+.header-line {
+  width: 175px;
+  height: 1px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .external-link-icon-container {
@@ -490,8 +498,12 @@ footer {
     padding: 75px 50px 75px 50px;
   }
 
-  .pricing h1 {
+  .portfolio h1, .pricing h1 {
     font-size: 24px;
+  }
+
+  .header-line {
+    width: 100px;
   }
 
   .pricing h2 {
