@@ -351,6 +351,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .plan-container {
@@ -508,7 +509,7 @@ footer {
   }
 
   .pricing {
-    padding: 75px 50px 75px 50px;
+    padding: 75px 50px 60px 50px;
   }
 
   .portfolio h1, .pricing h1 {
