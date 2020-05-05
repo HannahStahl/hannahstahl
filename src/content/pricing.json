@@ -3,7 +3,7 @@
     {
       "icon": "faUserCircle",
       "name": "Basic",
-      "price": "$1,000",
+      "price": "$1,500",
       "description": "Beautifully display information about you or your business.",
       "features": [
         "Design and development of single-page or multi-page site, displaying content provided by you",
@@ -16,7 +16,7 @@
     {
       "icon": "faShoppingCart",
       "name": "E-Commerce",
-      "price": "$1,500",
+      "price": "$2,000",
       "description": "Create a state-of-the-art online shopping experience.",
       "features": [
         "All features that are included with Basic plan",
