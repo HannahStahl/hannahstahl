@@ -1,6 +1,11 @@
 {
   "portfolio": [
     {
+      "name": "Olea Edge Analytics",
+      "url": "https://www.oleaedge.com",
+      "img": "oleaedge"
+    },
+    {
       "name": "Nic Catterall",
       "url": "https://www.niccatterall.com",
       "img": "niccatterall"
@@ -14,11 +19,6 @@
       "name": "Annetty Crocker",
       "url": "https://www.annettycrocker.com",
       "img": "annettycrocker"
-    },
-    {
-      "name": "Olea Edge Analytics",
-      "url": "https://www.oleaedge.com",
-      "img": "oleaedge"
     }
   ]
 }
