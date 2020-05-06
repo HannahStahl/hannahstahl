@@ -1,6 +1,11 @@
 {
   "portfolio": [
     {
+      "name": "S J Parham Photography",
+      "url": "https://www.sjparhamphotography.com",
+      "img": "sjparhamphotography2"
+    },
+    {
       "name": "Olea Edge Analytics",
       "url": "https://www.oleaedge.com",
       "img": "oleaedge"
@@ -14,11 +19,6 @@
       "name": "Bubba's Beds for Shelter Friends",
       "url": "https://www.bubbasbeds.org",
       "img": "bubbasbeds"
-    },
-    {
-      "name": "Annetty Crocker",
-      "url": "https://www.annettycrocker.com",
-      "img": "annettycrocker"
     }
   ]
 }
