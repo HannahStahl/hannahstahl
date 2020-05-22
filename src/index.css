@@ -314,6 +314,71 @@ footer {
   right: -50px;
 }
 
+.testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--extra-light-gray);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.testimonials .header-line {
+  background-color: var(--dark-gray);
+}
+
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: white;
+  width: 400px;
+  max-width: 80vw;
+  padding: 30px 45px 30px 45px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 5px 0px var(--light-gray);
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+}
+
+.testimonial .quote {
+  text-align: left;
+}
+
+.testimonial .client {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.testimonials-list {
+  margin-top: 10px;
+}
+
+.testimonials-list .quote-icon {
+  font-size: 40px;
+  color: var(--light-gray);
+  margin-left: -25px;
+  margin-bottom: -20px;
+}
+
 .pricing {
   width: 100vw;
   padding: 100px 20px 100px 20px;
@@ -508,12 +573,24 @@ footer {
     padding: 75px 50px 60px 50px;
   }
 
-  .portfolio h1, .pricing h1 {
+  .portfolio h1, .testimonials h1, .pricing h1 {
     font-size: 24px;
   }
 
   .header-line {
     width: 100px;
+  }
+
+  .testimonials-list .quote-icon {
+    font-size: 30px;
+  }
+
+  .testimonial {
+    padding: 25px 40px 25px 40px;
+  }
+
+  .testimonial p {
+    font-size: 13px;
   }
 
   .pricing h2 {

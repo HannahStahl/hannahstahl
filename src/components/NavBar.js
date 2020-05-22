@@ -20,6 +20,7 @@ const NavBar = () => {
         <Nav className="ml-auto" activeKey={`/${section}`}>
           <Nav.Link href="/#about">About</Nav.Link>
           <Nav.Link href="/#portfolio">Portfolio</Nav.Link>
+          <Nav.Link href="/#testimonials">Testimonials</Nav.Link>
           <Nav.Link href="/#pricing">Pricing</Nav.Link>
           <Nav.Link href="/#contact">Contact</Nav.Link>
         </Nav>

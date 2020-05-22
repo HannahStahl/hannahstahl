@@ -4,6 +4,7 @@ import { Waypoint } from 'react-waypoint';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -20,6 +21,9 @@ const App = () => (
     </ScrollableAnchor>
     <ScrollableAnchor id="portfolio">
       <Waypoint topOffset="50%"><div className="section"><Portfolio /></div></Waypoint>
+    </ScrollableAnchor>
+    <ScrollableAnchor id="testimonials">
+      <Waypoint topOffset="50%"><div className="section"><Testimonials /></div></Waypoint>
     </ScrollableAnchor>
     <ScrollableAnchor id="pricing">
       <Waypoint topOffset="50%"><div className="section"><Pricing /></div></Waypoint>
