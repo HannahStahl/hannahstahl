@@ -1,19 +1,24 @@
 {
   "portfolio": [
     {
+      "name": "Dale Feuer Jewelry",
+      "url": "https://www.dalefeuerjewelry.com",
+      "img": "dalefeuerjewelry"
+    },
+    {
       "name": "S J Parham Photography",
       "url": "https://www.sjparhamphotography.com",
       "img": "sjparhamphotography"
     },
     {
-      "name": "Olea Edge Analytics",
-      "url": "https://www.oleaedge.com",
-      "img": "oleaedge"
-    },
-    {
       "name": "Nic Catterall",
       "url": "https://www.niccatterall.com",
       "img": "niccatterall"
+    },
+    {
+      "name": "Olea Edge Analytics",
+      "url": "https://www.oleaedge.com",
+      "img": "oleaedge"
     },
     {
       "name": "Bubba's Beds for Shelter Friends",
