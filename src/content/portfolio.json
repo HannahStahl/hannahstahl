@@ -11,19 +11,14 @@
       "img": "sjparhamphotography"
     },
     {
-      "name": "Nic Catterall",
-      "url": "https://www.niccatterall.com",
-      "img": "niccatterall"
-    },
-    {
-      "name": "Olea Edge Analytics",
-      "url": "https://www.oleaedge.com",
-      "img": "oleaedge"
-    },
-    {
       "name": "Bubba's Beds for Shelter Friends",
       "url": "https://www.bubbasbeds.org",
       "img": "bubbasbeds"
+    },
+    {
+      "name": "Nic Catterall",
+      "url": "https://www.niccatterall.com",
+      "img": "niccatterall"
     }
   ]
 }
