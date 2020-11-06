@@ -531,6 +531,24 @@ footer {
   margin: 0 0 0 20px;
 }
 
+.modal, .modal-title {
+  text-align: center;
+}
+
+.modal-title {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
 @media all and (max-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
     padding-right: 0px;
