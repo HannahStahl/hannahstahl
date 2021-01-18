@@ -1,24 +1,24 @@
 {
   "portfolio": [
     {
-      "name": "Dale Feuer Jewelry",
-      "url": "https://www.dalefeuerjewelry.com",
-      "img": "dalefeuerjewelry"
-    },
-    {
       "name": "S J Parham Photography",
       "url": "https://www.sjparhamphotography.com",
       "img": "sjparhamphotography"
     },
     {
+      "name": "Dale Feuer Jewelry",
+      "url": "https://www.dalefeuerjewelry.com",
+      "img": "dalefeuerjewelry"
+    },
+    {
+      "name": "DeuteRx",
+      "url": "https://www.deuterx.com",
+      "img": "deuterx"
+    },
+    {
       "name": "Bubba's Beds for Shelter Friends",
       "url": "https://www.bubbasbeds.org",
       "img": "bubbasbeds"
-    },
-    {
-      "name": "Nic Catterall",
-      "url": "https://www.niccatterall.com",
-      "img": "niccatterall"
     }
   ]
 }
