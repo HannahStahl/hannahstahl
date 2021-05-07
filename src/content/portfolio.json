@@ -1,9 +1,9 @@
 {
   "portfolio": [
     {
-      "name": "S J Parham Photography",
-      "url": "https://www.sjparhamphotography.com",
-      "img": "sjparhamphotography"
+      "name": "Sam's Nature Photography",
+      "url": "https://www.samsnaturephotography.com",
+      "img": "samsnaturephotography"
     },
     {
       "name": "Dale Feuer Jewelry",
@@ -16,9 +16,9 @@
       "img": "deuterx"
     },
     {
-      "name": "Bubba's Beds for Shelter Friends",
-      "url": "https://www.bubbasbeds.org",
-      "img": "bubbasbeds"
+      "name": "S J Parham Photography",
+      "url": "https://www.sjparhamphotography.com",
+      "img": "sjparhamphotography"
     }
   ]
 }
