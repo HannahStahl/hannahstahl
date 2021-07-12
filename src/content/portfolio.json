@@ -1,6 +1,11 @@
 {
   "portfolio": [
     {
+      "name": "Stahl Speech Therapy",
+      "url": "https://www.stahlspeech.com",
+      "img": "stahlspeech"
+    },
+    {
       "name": "Sam's Nature Photography",
       "url": "https://www.samsnaturephotography.com",
       "img": "samsnaturephotography"
