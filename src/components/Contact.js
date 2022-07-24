@@ -15,10 +15,16 @@ export default class Contact extends Component {
     event.preventDefault();
     const { name, email, message } = this.state;
     this.setState({ sending: true });
-    fetch(`${config.emailServiceURL}/email/send`, {
+    fetch(config.emailServiceURL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({
+        name,
+        message,
+        userEmail: email,
+        clientEmail: 'hannahstahl14@gmail.com',
+        siteDomain: window.location.origin,
+      }),
     }).then((response) => response.json()).then((json) => {
       if (json.MessageId) {
         this.setState({
