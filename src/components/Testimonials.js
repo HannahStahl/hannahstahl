@@ -17,10 +17,7 @@ const Testimonials = () => (
               <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
               <p className="quote">{testimonial.quote}</p>
               <p className="client">
-                {`- ${testimonial.name}, `}
-                <a href={`https://${testimonial.website}`} target="_blank" rel="noopener noreferrer">
-                  {testimonial.website}
-                </a>
+                {`- ${testimonial.name}`}
               </p>
             </div>
           </div>
